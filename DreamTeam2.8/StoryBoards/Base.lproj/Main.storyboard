@@ -15,21 +15,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yzX-wL-58i">
-                                <rect key="frame" x="137" y="269" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="BQN-Km-CCP" kind="presentation" modalPresentationStyle="fullScreen" id="mWm-Jc-71B"/>
-                                </connections>
-                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Healthy Communities" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="cYU-nm-Fg1">
+                                <rect key="frame" x="80" y="35" width="160" height="37"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="34"/>
+                                <color key="textColor" systemColor="secondarySystemBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Добро пожаловать" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="3jI-gb-THk">
+                                <rect key="frame" x="20" y="429" width="280" height="53"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="44"/>
+                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="wmn-th-3o4">
+                                <rect key="frame" x="65" y="498" width="190" height="30"/>
+                                <subviews>
+                                    <button opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Ed-mI-cSE">
+                                        <rect key="frame" x="0.0" y="0.0" width="190" height="30"/>
+                                        <color key="backgroundColor" red="0.26978578600000003" green="0.2217259442" blue="0.97063228629999998" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Я здесь уже был(а)">
+                                            <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="yzX-wL-58i" firstAttribute="centerY" secondItem="Ofw-GA-Rcd" secondAttribute="centerY" id="8FK-Zl-SXW"/>
-                            <constraint firstItem="yzX-wL-58i" firstAttribute="centerX" secondItem="Ofw-GA-Rcd" secondAttribute="centerX" id="ptR-8e-WtV"/>
+                            <constraint firstItem="3jI-gb-THk" firstAttribute="leading" secondItem="vz6-zy-Yfx" secondAttribute="leading" constant="20" id="CRy-UI-O4j"/>
+                            <constraint firstItem="cYU-nm-Fg1" firstAttribute="top" secondItem="vz6-zy-Yfx" secondAttribute="top" constant="35" id="FdU-6a-R2Z"/>
+                            <constraint firstItem="vz6-zy-Yfx" firstAttribute="trailing" secondItem="cYU-nm-Fg1" secondAttribute="trailing" constant="80" id="VSt-kS-8Yg"/>
+                            <constraint firstItem="wmn-th-3o4" firstAttribute="top" secondItem="3jI-gb-THk" secondAttribute="bottom" constant="16" id="VqS-KI-WTY"/>
+                            <constraint firstItem="vz6-zy-Yfx" firstAttribute="trailing" secondItem="wmn-th-3o4" secondAttribute="trailing" constant="65" id="fsl-k1-aph"/>
+                            <constraint firstItem="vz6-zy-Yfx" firstAttribute="bottom" secondItem="wmn-th-3o4" secondAttribute="bottom" constant="40" id="fyh-An-wwl"/>
+                            <constraint firstItem="vz6-zy-Yfx" firstAttribute="trailing" secondItem="3jI-gb-THk" secondAttribute="trailing" constant="20" id="gU9-R3-gsE"/>
+                            <constraint firstItem="wmn-th-3o4" firstAttribute="leading" secondItem="vz6-zy-Yfx" secondAttribute="leading" constant="65" id="nn6-1f-s1d"/>
+                            <constraint firstItem="cYU-nm-Fg1" firstAttribute="leading" secondItem="vz6-zy-Yfx" secondAttribute="leading" constant="80" id="uyZ-l2-uy7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="vz6-zy-Yfx"/>
                     </view>
+                    <connections>
+                        <outlet property="loginButton" destination="9Ed-mI-cSE" id="jMW-RR-JGY"/>
+                        <outlet property="registerButton" destination="gBi-Ix-f33" id="9xx-s2-D93"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s9e-Af-9rz" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -43,21 +71,176 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dHb-3o-hQq">
-                                <rect key="frame" x="137" y="269" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="R9k-rw-Gx6" kind="presentation" modalPresentationStyle="fullScreen" id="Ohm-sv-Ec4"/>
-                                </connections>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Nq-sP-ktQ">
+                                <rect key="frame" x="220" y="5" width="85" height="30"/>
+                                <state key="normal" title="Пропустить">
+                                    <color key="titleColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                </state>
                             </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0da-ns-UYM">
+                                <rect key="frame" x="96" y="248" width="128" height="114"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter login" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="v7s-yS-IM9">
+                                        <rect key="frame" x="0.0" y="0.0" width="128" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter password" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="Hqa-C4-ytA">
+                                        <rect key="frame" x="0.0" y="42" width="128" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                    </textField>
+                                    <button opaque="NO" alpha="0.94999998807907104" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gBi-Ix-f33">
+                                        <rect key="frame" x="0.0" y="84" width="128" height="30"/>
+                                        <color key="backgroundColor" red="0.26978578600000003" green="0.2217259442" blue="0.97063228629999998" alpha="0.84705882349999995" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Войти">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <segue destination="BQN-Km-CCP" kind="presentation" modalPresentationStyle="fullScreen" id="URp-41-C62"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="87X-Ir-QdY">
+                                <rect key="frame" x="40" y="105.5" width="240" height="357"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="huh-UV-XHD">
+                                        <rect key="frame" x="0.0" y="0.0" width="240" height="104"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Зарегистрируйтесь" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="kYX-eL-Rbo">
+                                                <rect key="frame" x="0.0" y="0.0" width="240" height="37"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Чтобы иметь доступ ко всем нашим потрясяющим рецептами и функциями" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PCg-nN-ZpC">
+                                                <rect key="frame" x="3" y="43" width="234.5" height="61"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="11" translatesAutoresizingMaskIntoConstraints="NO" id="Kc0-Cb-TbJ">
+                                        <rect key="frame" x="10" y="119" width="220" height="112"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F0M-Qa-wpV">
+                                                <rect key="frame" x="0.0" y="0.0" width="220" height="30"/>
+                                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                <state key="normal" title=" Войти с  Apple">
+                                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                                <connections>
+                                                    <segue destination="R9k-rw-Gx6" kind="presentation" identifier="logIn" modalPresentationStyle="fullScreen" id="tjE-Fj-3pm"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ryf-cJ-eUV">
+                                                <rect key="frame" x="0.0" y="41" width="220" height="30"/>
+                                                <color key="backgroundColor" red="0.20755016200000001" green="0.18454475340000001" blue="0.94237775260000001" alpha="0.85810959509999996" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="FaceBook">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yFV-cT-OrJ">
+                                                <rect key="frame" x="0.0" y="82" width="220" height="30"/>
+                                                <color key="backgroundColor" red="0.34711804870000001" green="0.33267624550000002" blue="0.95595854920000001" alpha="0.85211267609999997" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <state key="normal" title="E-mail">
+                                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="220" id="aRv-WT-1EB"/>
+                                        </constraints>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" alignment="firstBaseline" spacing="3" baselineRelativeArrangement="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jlY-yd-Pah">
+                                        <rect key="frame" x="20.5" y="246" width="199.5" height="19.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Регистрируясь я принимаю" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="4Zv-a4-IFO">
+                                                <rect key="frame" x="0.0" y="0.0" width="150.5" height="13.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="rkl-b3-6x9">
+                                                <rect key="frame" x="153.5" y="-5.5" width="46" height="25"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="правила">
+                                                            <attributes>
+                                                                <color key="NSColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                                <font key="NSFont" metaFont="message" size="11"/>
+                                                                <integer key="NSUnderline" value="1"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                                <connections>
+                                                    <action selector="termOfUseAllert" destination="BQN-Km-CCP" eventType="touchUpInside" id="6HM-Hh-trx"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="aaE-6o-0bW">
+                                        <rect key="frame" x="15.5" y="280.5" width="209.5" height="19.5"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="––––––––––– или ––––––––––– " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MtH-hk-03U">
+                                                <rect key="frame" x="0.0" y="0.0" width="209.5" height="19.5"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                    </stackView>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="fRz-R8-gm2">
+                                        <rect key="frame" x="33" y="315" width="174" height="42"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Уже есть учетная запись?" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZLu-Am-06h">
+                                                <rect key="frame" x="0.0" y="0.0" width="174" height="17"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                <color key="textColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="GQJ-Zg-BIP">
+                                                <rect key="frame" x="47" y="17" width="80" height="25"/>
+                                                <state key="normal">
+                                                    <attributedString key="attributedTitle">
+                                                        <fragment content="ВОЙТИ ЗДЕСЬ">
+                                                            <attributes>
+                                                                <color key="NSColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                                                <font key="NSFont" metaFont="message" size="11"/>
+                                                                <integer key="NSUnderline" value="1"/>
+                                                            </attributes>
+                                                        </fragment>
+                                                    </attributedString>
+                                                </state>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="dHb-3o-hQq" firstAttribute="centerY" secondItem="ZFu-Kq-DSc" secondAttribute="centerY" id="pTT-f1-Z2U"/>
-                            <constraint firstItem="dHb-3o-hQq" firstAttribute="centerX" secondItem="ZFu-Kq-DSc" secondAttribute="centerX" id="q7K-ac-YAV"/>
+                            <constraint firstItem="87X-Ir-QdY" firstAttribute="leading" secondItem="ZFu-Kq-DSc" secondAttribute="leading" constant="40" id="8uo-8d-5HO"/>
+                            <constraint firstAttribute="trailing" secondItem="87X-Ir-QdY" secondAttribute="trailing" constant="40" id="OK3-ns-DZZ"/>
+                            <constraint firstItem="Yx4-3o-v1z" firstAttribute="trailing" secondItem="9Nq-sP-ktQ" secondAttribute="trailing" constant="15" id="dnb-L8-jyk"/>
+                            <constraint firstItem="87X-Ir-QdY" firstAttribute="centerY" secondItem="Yx4-3o-v1z" secondAttribute="centerY" id="gC1-ZP-71J"/>
+                            <constraint firstItem="9Nq-sP-ktQ" firstAttribute="top" secondItem="Yx4-3o-v1z" secondAttribute="top" constant="5" id="x5z-wt-FrQ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Yx4-3o-v1z"/>
+                        <variation key="default">
+                            <mask key="subviews">
+                                <exclude reference="87X-Ir-QdY"/>
+                            </mask>
+                        </variation>
                     </view>
+                    <connections>
+                        <outlet property="appleRegisterButton" destination="F0M-Qa-wpV" id="zeG-8u-h4m"/>
+                        <outlet property="emailRegisterButton" destination="yFV-cT-OrJ" id="2qq-1i-OB3"/>
+                        <outlet property="faceBookRegisterButton" destination="ryf-cJ-eUV" id="7cE-gz-PYk"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rZp-9p-3Cw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -69,6 +252,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="R9k-rw-Gx6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RV9-Nq-bgt">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -314,7 +498,6 @@
         <!--Favourite-->
         <scene sceneID="ncJ-8G-rm7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Et3-0B-ZpF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="auW-Aj-p1Y" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Favourite" image="folder.fill.badge.person.crop" catalog="system" id="TNQ-xh-ola"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MnT-9O-exT">
@@ -325,6 +508,7 @@
                         <segue destination="C9o-dl-UK7" kind="relationship" relationship="rootViewController" id="t6h-K7-CbZ"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Et3-0B-ZpF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2207" y="-196"/>
         </scene>
