@@ -69,6 +69,7 @@
                 <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="R9k-rw-Gx6" sceneMemberID="viewController">
                     <toolbarItems/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="RV9-Nq-bgt">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
@@ -129,18 +130,51 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35y-Bn-Ep0">
-                                <rect key="frame" x="137" y="269" width="46" height="30"/>
-                                <state key="normal" title="Button"/>
-                                <connections>
-                                    <segue destination="uGp-Hv-P3o" kind="presentation" modalPresentationStyle="fullScreen" id="pg2-QY-p4a"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="VlZ-R9-wNG">
+                                <rect key="frame" x="130" y="116" width="60" height="336"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GeN-Fe-dqX">
+                                        <rect key="frame" x="0.0" y="0.0" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="6DF-2A-vIc"/>
+                                            <constraint firstAttribute="width" constant="60" id="GKa-r3-aTM"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="icons8-каре-ягненка-100"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LVq-ga-iDe">
+                                        <rect key="frame" x="0.0" y="92" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="24c-QN-3Ww"/>
+                                            <constraint firstAttribute="height" constant="60" id="2jI-Ch-Ueu"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="icons8-корм-для-рыб-100"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SK2-nn-Ec5">
+                                        <rect key="frame" x="0.0" y="184" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="60" id="SdN-Te-yps"/>
+                                            <constraint firstAttribute="height" constant="60" id="ozP-gn-RT2"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="icons8-брокколи-100"/>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="35y-Bn-Ep0">
+                                        <rect key="frame" x="0.0" y="276" width="60" height="60"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="60" id="5vJ-Hv-APn"/>
+                                            <constraint firstAttribute="width" constant="60" id="Eqm-W1-Xcy"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="icons8-пицца-100"/>
+                                        <connections>
+                                            <segue destination="uGp-Hv-P3o" kind="presentation" modalPresentationStyle="fullScreen" id="pg2-QY-p4a"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="35y-Bn-Ep0" firstAttribute="centerY" secondItem="nSx-hB-ELI" secondAttribute="centerY" id="Iut-tZ-bAW"/>
-                            <constraint firstItem="35y-Bn-Ep0" firstAttribute="centerX" secondItem="nSx-hB-ELI" secondAttribute="centerX" id="Mgf-VQ-Kde"/>
+                            <constraint firstItem="VlZ-R9-wNG" firstAttribute="centerX" secondItem="nSx-hB-ELI" secondAttribute="centerX" id="nAq-EO-rdN"/>
+                            <constraint firstItem="VlZ-R9-wNG" firstAttribute="centerY" secondItem="nSx-hB-ELI" secondAttribute="centerY" id="x8W-av-sd2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MRj-4o-AQi"/>
                     </view>
@@ -314,7 +348,6 @@
         <!--Favourite-->
         <scene sceneID="ncJ-8G-rm7">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Et3-0B-ZpF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <navigationController id="auW-Aj-p1Y" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Favourite" image="folder.fill.badge.person.crop" catalog="system" id="TNQ-xh-ola"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="MnT-9O-exT">
@@ -325,6 +358,7 @@
                         <segue destination="C9o-dl-UK7" kind="relationship" relationship="rootViewController" id="t6h-K7-CbZ"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Et3-0B-ZpF" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2207" y="-196"/>
         </scene>
@@ -368,6 +402,10 @@
         <image name="cart.badge.plus" catalog="system" width="128" height="98"/>
         <image name="doc.append" catalog="system" width="115" height="128"/>
         <image name="folder.fill.badge.person.crop" catalog="system" width="128" height="86"/>
+        <image name="icons8-брокколи-100" width="100" height="100"/>
+        <image name="icons8-каре-ягненка-100" width="100" height="100"/>
+        <image name="icons8-корм-для-рыб-100" width="100" height="100"/>
+        <image name="icons8-пицца-100" width="100" height="100"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
     </resources>
 </document>
