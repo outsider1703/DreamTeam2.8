@@ -13,6 +13,7 @@
 		1891843824941A6F0017EADD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1891843624941A6F0017EADD /* Main.storyboard */; };
 		1891843A24941A710017EADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1891843924941A710017EADD /* Assets.xcassets */; };
 		1891843D24941A710017EADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1891843B24941A710017EADD /* LaunchScreen.storyboard */; };
+		1891844924941B760017EADD /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 1891844824941B760017EADD /* image.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		1891843924941A710017EADD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1891843C24941A710017EADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1891843E24941A710017EADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1891844824941B760017EADD /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +58,48 @@
 		1891842F24941A6F0017EADD /* DreamTeam2.8 */ = {
 			isa = PBXGroup;
 			children = (
-				1891843024941A6F0017EADD /* AppDelegate.swift */,
-				1891843224941A6F0017EADD /* SceneDelegate.swift */,
-				1891843424941A6F0017EADD /* ViewController.swift */,
-				1891843624941A6F0017EADD /* Main.storyboard */,
-				1891843924941A710017EADD /* Assets.xcassets */,
-				1891843B24941A710017EADD /* LaunchScreen.storyboard */,
-				1891843E24941A710017EADD /* Info.plist */,
+				1891844724941AAA0017EADD /* Support */,
+				1891844624941A9E0017EADD /* ViewControllers */,
+				1891844424941A8D0017EADD /* StoryBoards */,
+				1891844524941A970017EADD /* Sources */,
 			);
 			path = DreamTeam2.8;
+			sourceTree = "<group>";
+		};
+		1891844424941A8D0017EADD /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				1891843624941A6F0017EADD /* Main.storyboard */,
+				1891843B24941A710017EADD /* LaunchScreen.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		1891844524941A970017EADD /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				1891844824941B760017EADD /* image.png */,
+				1891843924941A710017EADD /* Assets.xcassets */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		1891844624941A9E0017EADD /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				1891843424941A6F0017EADD /* ViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		1891844724941AAA0017EADD /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				1891843024941A6F0017EADD /* AppDelegate.swift */,
+				1891843224941A6F0017EADD /* SceneDelegate.swift */,
+				1891843E24941A710017EADD /* Info.plist */,
+			);
+			path = Support;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,6 +161,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1891843D24941A710017EADD /* LaunchScreen.storyboard in Resources */,
+				1891844924941B760017EADD /* image.png in Resources */,
 				1891843A24941A710017EADD /* Assets.xcassets in Resources */,
 				1891843824941A6F0017EADD /* Main.storyboard in Resources */,
 			);
@@ -286,7 +322,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3WU34A9GML;
-				INFOPLIST_FILE = DreamTeam2.8/Info.plist;
+				INFOPLIST_FILE = DreamTeam2.8/Support/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -294,7 +331,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.instagram-kovalev-alex92.DreamTeam2-8";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -304,7 +341,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 3WU34A9GML;
-				INFOPLIST_FILE = DreamTeam2.8/Info.plist;
+				INFOPLIST_FILE = DreamTeam2.8/Support/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -312,7 +350,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "com.instagram-kovalev-alex92.DreamTeam2-8";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
