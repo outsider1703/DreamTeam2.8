@@ -17,8 +17,7 @@
 		1891844C249432080017EADD /* IngredientsForRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1891844B249432080017EADD /* IngredientsForRecipes.swift */; };
 		1891844F2494323B0017EADD /* IngredientsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1891844E2494323B0017EADD /* IngredientsDataManager.swift */; };
 		18918451249432440017EADD /* DishesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18918450249432440017EADD /* DishesDataManager.swift */; };
-		52CAFEB72494389B0011B598 /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CAFEB62494389B0011B598 /* RecipeTableViewController.swift */; };
-		52CAFEB924943DBB0011B598 /* RecipeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CAFEB824943DBB0011B598 /* RecipeDetailsViewController.swift */; };
+		FA1CAADF249443B400677A6E /* MainPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CAADE249443B400677A6E /* MainPosition.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,11 +30,10 @@
 		1891843C24941A710017EADD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1891843E24941A710017EADD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1891844824941B760017EADD /* image.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = image.png; sourceTree = "<group>"; };
-		1891844B249432080017EADD /* IngredientsForRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsForRecipes.swift; sourceTree = "<group>"; };
+		1891844B249432080017EADD /* GeneralMenuForTheApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralMenuForTheApplication.swift; sourceTree = "<group>"; };
 		1891844E2494323B0017EADD /* IngredientsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsDataManager.swift; sourceTree = "<group>"; };
 		18918450249432440017EADD /* DishesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesDataManager.swift; sourceTree = "<group>"; };
-		52CAFEB62494389B0011B598 /* RecipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewController.swift; sourceTree = "<group>"; };
-		52CAFEB824943DBB0011B598 /* RecipeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsViewController.swift; sourceTree = "<group>"; };
+		FA1CAADE249443B400677A6E /* MainPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPosition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,7 +117,8 @@
 		1891844A249431F30017EADD /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				1891844B249432080017EADD /* IngredientsForRecipes.swift */,
+				1891844B249432080017EADD /* GeneralMenuForTheApplication.swift */,
+				FA1CAADE249443B400677A6E /* MainPosition.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -207,10 +206,9 @@
 			files = (
 				1891844F2494323B0017EADD /* IngredientsDataManager.swift in Sources */,
 				1891843524941A6F0017EADD /* ViewController.swift in Sources */,
-				1891844C249432080017EADD /* IngredientsForRecipes.swift in Sources */,
-				52CAFEB924943DBB0011B598 /* RecipeDetailsViewController.swift in Sources */,
+				1891844C249432080017EADD /* GeneralMenuForTheApplication.swift in Sources */,
 				18918451249432440017EADD /* DishesDataManager.swift in Sources */,
-				52CAFEB72494389B0011B598 /* RecipeTableViewController.swift in Sources */,
+				FA1CAADF249443B400677A6E /* MainPosition.swift in Sources */,
 				1891843124941A6F0017EADD /* AppDelegate.swift in Sources */,
 				1891843324941A6F0017EADD /* SceneDelegate.swift in Sources */,
 			);

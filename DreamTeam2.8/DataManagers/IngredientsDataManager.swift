@@ -8,15 +8,15 @@
 
 class IngredientsDataManager {
     
-    let meat = ["Рыба", "Свинина", "Говядина", "Курица"]
-    
-    let vegetables = ["Морковь", "Лук", "Чеснок",
-                      "Томат", "Капуста", "Свекла", "Картофель"]
-    
-    let garnish = ["Макароны", "Гречка", "Рис", "Картофель"]
-    
     static let sharedIngredient = IngredientsDataManager()
     
     private init() {}
+    
+    let meat = ["Рыба", "Свинина", "Говядина", "Курица"]
+    
+    let ingredients = ["Морковь", "Лук", "Чеснок",
+                      "Томат", "Капуста", "Свекла", "Картофель"]
+    
+    let garnish = ["Макароны", "Гречка", "Рис", "Картофель"]
     
 }
