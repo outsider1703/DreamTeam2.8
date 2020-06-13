@@ -125,7 +125,7 @@
         <!--Constructor-->
         <scene sceneID="S3a-Rm-qSe">
             <objects>
-                <viewController id="TUJ-dx-2VL" sceneMemberID="viewController">
+                <viewController id="TUJ-dx-2VL" customClass="ConstructorViewController" customModule="DreamTeam2_8" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nSx-hB-ELI">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -164,21 +164,34 @@
                                             <constraint firstAttribute="width" constant="60" id="Eqm-W1-Xcy"/>
                                         </constraints>
                                         <state key="normal" title="Button" image="icons8-пицца-100"/>
-                                        <connections>
-                                            <segue destination="uGp-Hv-P3o" kind="presentation" modalPresentationStyle="fullScreen" id="pg2-QY-p4a"/>
-                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pf2-NY-N6J">
+                                <rect key="frame" x="20" y="20" width="280" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="MRj-4o-AQi" firstAttribute="trailing" secondItem="Pf2-NY-N6J" secondAttribute="trailing" constant="20" id="JBz-A6-tUy"/>
+                            <constraint firstItem="Pf2-NY-N6J" firstAttribute="top" secondItem="MRj-4o-AQi" secondAttribute="top" constant="20" id="cMT-7q-gBF"/>
+                            <constraint firstItem="Pf2-NY-N6J" firstAttribute="leading" secondItem="MRj-4o-AQi" secondAttribute="leading" constant="20" id="hYI-QY-jds"/>
                             <constraint firstItem="VlZ-R9-wNG" firstAttribute="centerX" secondItem="nSx-hB-ELI" secondAttribute="centerX" id="nAq-EO-rdN"/>
                             <constraint firstItem="VlZ-R9-wNG" firstAttribute="centerY" secondItem="nSx-hB-ELI" secondAttribute="centerY" id="x8W-av-sd2"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="MRj-4o-AQi"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="Constructor" image="cart.badge.plus" catalog="system" id="yUf-fq-rHr"/>
+                    <connections>
+                        <outletCollection property="foodButton" destination="GeN-Fe-dqX" collectionClass="NSMutableArray" id="ThO-5j-pYb"/>
+                        <outletCollection property="foodButton" destination="LVq-ga-iDe" collectionClass="NSMutableArray" id="Qqa-VC-aiR"/>
+                        <outletCollection property="foodButton" destination="SK2-nn-Ec5" collectionClass="NSMutableArray" id="7Vh-Ff-uiW"/>
+                        <outletCollection property="foodButton" destination="35y-Bn-Ep0" collectionClass="NSMutableArray" id="g8N-bD-uVM"/>
+                        <segue destination="uGp-Hv-P3o" kind="presentation" identifier="showResult" modalPresentationStyle="fullScreen" id="CJN-Ca-4yd"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2yl-6X-pTx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -193,7 +206,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellOne" id="JVO-B6-HoL">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellRecipe" id="JVO-B6-HoL">
                                 <rect key="frame" x="0.0" y="28" width="320" height="43.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="JVO-B6-HoL" id="MhQ-ca-rg5">
@@ -366,6 +379,7 @@
         <scene sceneID="dzr-Zz-RFP">
             <objects>
                 <navigationController id="uGp-Hv-P3o" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="XC9-9e-Nq2"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Y6Z-0b-n9K">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
