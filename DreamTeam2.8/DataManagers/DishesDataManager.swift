@@ -41,5 +41,8 @@ class DishesDataManager {
 7.Оставить под крышкой на полчаса.
 """)
     
+    static let sharedDishes = DishesDataManager()
+    
+    private init() {}
 }
 

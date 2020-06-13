@@ -15,4 +15,8 @@ class IngredientsDataManager {
     
     let garnish = ["Макароны", "Гречка", "Рис", "Картофель"]
     
+    static let sharedIngredient = IngredientsDataManager()
+    
+    private init() {}
+    
 }

@@ -17,6 +17,8 @@
 		1891844C249432080017EADD /* IngredientsForRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1891844B249432080017EADD /* IngredientsForRecipes.swift */; };
 		1891844F2494323B0017EADD /* IngredientsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1891844E2494323B0017EADD /* IngredientsDataManager.swift */; };
 		18918451249432440017EADD /* DishesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18918450249432440017EADD /* DishesDataManager.swift */; };
+		52CAFEB72494389B0011B598 /* RecipeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CAFEB62494389B0011B598 /* RecipeTableViewController.swift */; };
+		52CAFEB924943DBB0011B598 /* RecipeDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CAFEB824943DBB0011B598 /* RecipeDetailsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +34,8 @@
 		1891844B249432080017EADD /* IngredientsForRecipes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsForRecipes.swift; sourceTree = "<group>"; };
 		1891844E2494323B0017EADD /* IngredientsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsDataManager.swift; sourceTree = "<group>"; };
 		18918450249432440017EADD /* DishesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesDataManager.swift; sourceTree = "<group>"; };
+		52CAFEB62494389B0011B598 /* RecipeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeTableViewController.swift; sourceTree = "<group>"; };
+		52CAFEB824943DBB0011B598 /* RecipeDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecipeDetailsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			isa = PBXGroup;
 			children = (
 				1891843424941A6F0017EADD /* ViewController.swift */,
+				52CAFEB62494389B0011B598 /* RecipeTableViewController.swift */,
+				52CAFEB824943DBB0011B598 /* RecipeDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -202,7 +208,9 @@
 				1891844F2494323B0017EADD /* IngredientsDataManager.swift in Sources */,
 				1891843524941A6F0017EADD /* ViewController.swift in Sources */,
 				1891844C249432080017EADD /* IngredientsForRecipes.swift in Sources */,
+				52CAFEB924943DBB0011B598 /* RecipeDetailsViewController.swift in Sources */,
 				18918451249432440017EADD /* DishesDataManager.swift in Sources */,
+				52CAFEB72494389B0011B598 /* RecipeTableViewController.swift in Sources */,
 				1891843124941A6F0017EADD /* AppDelegate.swift in Sources */,
 				1891843324941A6F0017EADD /* SceneDelegate.swift in Sources */,
 			);
