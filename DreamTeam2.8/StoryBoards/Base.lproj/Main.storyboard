@@ -250,13 +250,13 @@
         <!--Рецепты-->
         <scene sceneID="AQa-3O-Gp7">
             <objects>
-                <tableViewController id="etk-Wr-aUT" customClass="RecipeTableViewController" customModule="DreamTeam2_8" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="etk-Wr-aUT" customClass="DishesTableViewController" customModule="DreamTeam2_8" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="lOj-b6-dsG">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cellThree" textLabel="3Nf-eM-xsH" detailTextLabel="VK9-qp-TCy" style="IBUITableViewCellStyleSubtitle" id="pMH-hn-f5I">
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="recipeCell" textLabel="3Nf-eM-xsH" detailTextLabel="VK9-qp-TCy" style="IBUITableViewCellStyleSubtitle" id="pMH-hn-f5I">
                                 <rect key="frame" x="0.0" y="28" width="320" height="55.5"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pMH-hn-f5I" id="gVC-wH-00i">
@@ -288,28 +288,44 @@
                     </tableView>
                     <navigationItem key="navigationItem" title="Рецепты" id="nYV-Fk-DcI"/>
                     <connections>
-                        <segue destination="PCR-bE-VNG" kind="show" identifier="tableThree" id="VIO-kt-XFg"/>
+                        <segue destination="PCR-bE-VNG" kind="show" identifier="recipeDetails" id="VIO-kt-XFg"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yKr-V0-Bd9" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3015" y="-1219"/>
         </scene>
-        <!--Recipe Details View Controller-->
+        <!--Dish Details View Controller-->
         <scene sceneID="JJ0-dY-2nf">
             <objects>
-                <viewController id="PCR-bE-VNG" customClass="RecipeDetailsViewController" customModule="DreamTeam2_8" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="PCR-bE-VNG" customClass="DishDetailsViewController" customModule="DreamTeam2_8" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YGt-0T-Az4">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="DishName" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hfg-HD-nCg">
+                                <rect key="frame" x="16" y="64" width="288" height="27"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hfg-HD-nCg" firstAttribute="leading" secondItem="FKX-1S-dHk" secondAttribute="leading" constant="16" id="lRE-SQ-zjw"/>
+                            <constraint firstItem="FKX-1S-dHk" firstAttribute="trailing" secondItem="hfg-HD-nCg" secondAttribute="trailing" constant="16" id="nEy-vs-Y7w"/>
+                            <constraint firstItem="hfg-HD-nCg" firstAttribute="top" secondItem="FKX-1S-dHk" secondAttribute="top" constant="20" id="y76-R6-AuD"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="FKX-1S-dHk"/>
                     </view>
                     <navigationItem key="navigationItem" id="ucn-hd-LDb"/>
+                    <connections>
+                        <outlet property="dishNameLabel" destination="hfg-HD-nCg" id="ffB-8n-ffJ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Rud-hZ-5NH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3801" y="-1219"/>
+            <point key="canvasLocation" x="3800.625" y="-1219.0140845070423"/>
         </scene>
         <!--Recipies-->
         <scene sceneID="CvP-dw-hAa">

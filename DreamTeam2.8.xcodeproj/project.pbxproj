@@ -14,9 +14,11 @@
 		1891843A24941A710017EADD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1891843924941A710017EADD /* Assets.xcassets */; };
 		1891843D24941A710017EADD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1891843B24941A710017EADD /* LaunchScreen.storyboard */; };
 		1891844924941B760017EADD /* image.png in Resources */ = {isa = PBXBuildFile; fileRef = 1891844824941B760017EADD /* image.png */; };
-		1891844C249432080017EADD /* IngredientsForRecipes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1891844B249432080017EADD /* IngredientsForRecipes.swift */; };
+		1891844C249432080017EADD /* GeneralMenuForTheApplication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1891844B249432080017EADD /* GeneralMenuForTheApplication.swift */; };
 		1891844F2494323B0017EADD /* IngredientsDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1891844E2494323B0017EADD /* IngredientsDataManager.swift */; };
 		18918451249432440017EADD /* DishesDataManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18918450249432440017EADD /* DishesDataManager.swift */; };
+		52CAFEBF249466310011B598 /* DishesTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CAFEBE249466310011B598 /* DishesTableViewController.swift */; };
+		52CAFEC12494664E0011B598 /* DishDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52CAFEC02494664E0011B598 /* DishDetailsViewController.swift */; };
 		FA1CAADF249443B400677A6E /* MainPosition.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA1CAADE249443B400677A6E /* MainPosition.swift */; };
 /* End PBXBuildFile section */
 
@@ -33,6 +35,8 @@
 		1891844B249432080017EADD /* GeneralMenuForTheApplication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralMenuForTheApplication.swift; sourceTree = "<group>"; };
 		1891844E2494323B0017EADD /* IngredientsDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IngredientsDataManager.swift; sourceTree = "<group>"; };
 		18918450249432440017EADD /* DishesDataManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesDataManager.swift; sourceTree = "<group>"; };
+		52CAFEBE249466310011B598 /* DishesTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishesTableViewController.swift; sourceTree = "<group>"; };
+		52CAFEC02494664E0011B598 /* DishDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishDetailsViewController.swift; sourceTree = "<group>"; };
 		FA1CAADE249443B400677A6E /* MainPosition.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPosition.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -98,8 +102,8 @@
 			isa = PBXGroup;
 			children = (
 				1891843424941A6F0017EADD /* ViewController.swift */,
-				52CAFEB62494389B0011B598 /* RecipeTableViewController.swift */,
-				52CAFEB824943DBB0011B598 /* RecipeDetailsViewController.swift */,
+				52CAFEBE249466310011B598 /* DishesTableViewController.swift */,
+				52CAFEC02494664E0011B598 /* DishDetailsViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -205,6 +209,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1891844F2494323B0017EADD /* IngredientsDataManager.swift in Sources */,
+				52CAFEC12494664E0011B598 /* DishDetailsViewController.swift in Sources */,
+				52CAFEBF249466310011B598 /* DishesTableViewController.swift in Sources */,
 				1891843524941A6F0017EADD /* ViewController.swift in Sources */,
 				1891844C249432080017EADD /* GeneralMenuForTheApplication.swift in Sources */,
 				18918451249432440017EADD /* DishesDataManager.swift in Sources */,

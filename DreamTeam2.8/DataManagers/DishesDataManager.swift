@@ -5,7 +5,7 @@
 //  Created by Apple on 13.06.2020.
 //  Copyright © 2020 Aleksandr Kovalov. All rights reserved.
 //
-
+/*
 class DishesDataManager {
     
     static let sharedDishes = DishesDataManager()
@@ -42,3 +42,4 @@ class DishesDataManager {
     private init() {}
 }
 
+*/
