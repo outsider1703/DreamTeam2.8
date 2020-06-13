@@ -20,7 +20,7 @@ class StartViewController: UIViewController {
     var avPlayerLayer: AVPlayerLayer!
     var paused: Bool = false
     
-   // MARK: - View Did Load
+    // MARK: - View Did Load
     
     override func viewDidLoad() {
         
@@ -44,21 +44,34 @@ class StartViewController: UIViewController {
                                                name: .AVPlayerItemDidPlayToEndTime,
                                                object: avPlayer.currentItem)
     }
-    
+    // MARK: - Player Method
     @objc func playerItemDidReachEnd(notification: Notification) {
         let p: AVPlayerItem = notification.object as! AVPlayerItem
         p.seek(to: .zero)
     }
     
+    // MARK: - viewDidAppear
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
         avPlayer.play()
         paused = false
     }
     
+    // MARK: - viewDidDisappear
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         avPlayer.pause()
         paused = true
+    }
+    
+    @IBAction func goToLoginRegister(_ sender: UIButton) {
+        switch sender.tag {
+        case 0: print("Hello")
+        case 1: print("Hello1")
+        default: break
+            
+            
+        }
+        
     }
 }

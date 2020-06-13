@@ -34,13 +34,13 @@ class LoginViewController: UIViewController {
         faceBookRegisterButton.layer.cornerRadius = 5
         emailRegisterButton.layer.cornerRadius = 5
         
-        // MARK: - Blur
+    // MARK: - Blur
         view.backgroundColor = .clear
         let blurredView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
         blurredView.frame = view.bounds
         view.insertSubview(blurredView, at: 0)
         
-        // MARK: - BackGround Video
+    // MARK: - BackGround Video
         let theURL = Bundle.main.url(forResource:"Food", withExtension: "mp4")
         avPlayer = AVPlayer(url: theURL!)
         avPlayerLayer = AVPlayerLayer(player: avPlayer)
@@ -62,7 +62,6 @@ class LoginViewController: UIViewController {
         let navigationVC = tabBarConroller.viewControllers?.first as! UINavigationController
         let profileVC = navigationVC.topViewController as! ProfileViewController
         profileVC.user = user
-        
     }
     
     // MARK: - Methods
@@ -77,14 +76,15 @@ class LoginViewController: UIViewController {
         avPlayer.play()
         paused = false
     }
+    
     // MARK: - View Did Disappear
     override func viewDidDisappear(_ animated: Bool) {
         super.viewDidDisappear(animated)
         avPlayer.pause()
         paused = true
     }
-    // MARK: - IB Actions
     
+    // MARK: - IB Actions
     @IBAction func registerProfile() {
     }
     
@@ -99,25 +99,21 @@ class LoginViewController: UIViewController {
 
 
 
-// MARK: Extension - UI Alert
-
+    // MARK: Extension - UI Alert
 extension LoginViewController {
     private func returnAllert(with message: String, and text: String) {
         let alert = UIAlertController(title: message, message: text, preferredStyle: .alert)
         let okAction = UIAlertAction(title: "OK", style: .default)
-        
         present(alert, animated: true)
         alert.addAction(okAction)
     }
 }
 
-// MARK: - UIText Field Delegate
+    // MARK: - UIText Field Delegate
 extension  LoginViewController: UITextFieldDelegate { 
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         super .touchesBegan(touches, with: event)
         view.endEditing(true)
     }
-    
-    
 }
 
