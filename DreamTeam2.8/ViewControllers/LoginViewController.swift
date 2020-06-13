@@ -80,7 +80,9 @@ class LoginViewController: UIViewController {
         }
     @IBAction func termOfUseAllert() {
         returnAllert(with: "Самое главное правило🍎", and: "Кушай всегда здорово и вкусно!")
-        
+    }
+    @IBAction func resetLoginAndPusswordButton() {
+        returnAllert(with: "🍒", and: "Логин - Admin, пароль - Password ")
     }
     
     }
@@ -92,7 +94,7 @@ class LoginViewController: UIViewController {
 extension LoginViewController {
     private func returnAllert(with message: String, and text: String) {
         let alert = UIAlertController(title: message, message: text, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "Я согласен!", style: .default)
+        let okAction = UIAlertAction(title: "OK", style: .default)
         
         present(alert, animated: true)
         alert.addAction(okAction)
