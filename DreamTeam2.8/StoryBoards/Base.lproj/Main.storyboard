@@ -317,7 +317,6 @@
                         <variation key="default">
                             <mask key="subviews">
                                 <exclude reference="0da-ns-UYM"/>
-                                <exclude reference="87X-Ir-QdY"/>
                             </mask>
                         </variation>
                     </view>
@@ -352,10 +351,10 @@
             </objects>
             <point key="canvasLocation" x="1261.875" y="0.0"/>
         </scene>
-        <!--View Controller-->
+        <!--Profile View Controller-->
         <scene sceneID="8xa-mt-UbT">
             <objects>
-                <viewController id="7QU-BX-lsf" sceneMemberID="viewController">
+                <viewController id="7QU-BX-lsf" customClass="ProfileViewController" customModule="DreamTeam2_8" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="nAK-Ua-Vyc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
