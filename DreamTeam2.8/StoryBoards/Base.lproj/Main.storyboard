@@ -129,7 +129,7 @@
                                                         <fragment content="СБРОСИТЬ ЗДЕСЬ">
                                                             <attributes>
                                                                 <color key="NSColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                                <font key="NSFont" metaFont="system" size="12"/>
+                                                                <font key="NSFont" metaFont="label" size="12"/>
                                                                 <integer key="NSUnderline" value="1"/>
                                                             </attributes>
                                                         </fragment>
@@ -352,19 +352,42 @@
             </objects>
             <point key="canvasLocation" x="1261.875" y="0.0"/>
         </scene>
-        <!--Profile View Controller-->
+        <!--Профиль-->
         <scene sceneID="8xa-mt-UbT">
             <objects>
                 <viewController id="7QU-BX-lsf" customClass="ProfileViewController" customModule="DreamTeam2_8" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="nAK-Ua-Vyc">
+                    <view key="view" opaque="NO" contentMode="scaleAspectFit" id="nAK-Ua-Vyc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="W98-YM-gx9">
+                                <rect key="frame" x="16" y="55" width="150" height="150"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRg-9o-elu">
+                                <rect key="frame" x="196" y="108" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ENk-MP-2Jh">
+                                <rect key="frame" x="196" y="147" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9ER-N6-G0v">
+                                <rect key="frame" x="68" y="213" width="46" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <viewLayoutGuide key="safeArea" id="qfQ-v4-TWr"/>
                     </view>
-                    <navigationItem key="navigationItem" id="jcz-Hp-riS">
+                    <navigationItem key="navigationItem" title="Профиль" id="jcz-Hp-riS">
                         <barButtonItem key="backBarButtonItem" title="Назад" id="E3t-t0-nZT"/>
-                        <barButtonItem key="rightBarButtonItem" image="person.badge.plus" catalog="system" id="z4w-tL-DUi">
+                        <barButtonItem key="rightBarButtonItem" image="pencil.tip.crop.circle.badge.plus" catalog="system" id="z4w-tL-DUi">
                             <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
                                 <segue destination="jou-Oi-CIe" kind="show" id="XpK-pL-UXM"/>
@@ -379,7 +402,7 @@
         <!--Изменить имя-->
         <scene sceneID="V1T-cq-HcT">
             <objects>
-                <viewController id="jou-Oi-CIe" sceneMemberID="viewController">
+                <viewController id="jou-Oi-CIe" customClass="EditProfileViewController" customModule="DreamTeam2_8" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wrX-nX-jab">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -669,7 +692,7 @@
         <image name="cart.badge.plus" catalog="system" width="128" height="98"/>
         <image name="doc.append" catalog="system" width="115" height="128"/>
         <image name="folder.fill.badge.person.crop" catalog="system" width="128" height="86"/>
-        <image name="person.badge.plus" catalog="system" width="128" height="116"/>
+        <image name="pencil.tip.crop.circle.badge.plus" catalog="system" width="128" height="101"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
     </resources>
 </document>

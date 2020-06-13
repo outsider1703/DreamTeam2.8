@@ -36,7 +36,7 @@ class LoginViewController: UIViewController {
             
             view.backgroundColor = .clear
             let blurredView = UIVisualEffectView(effect: UIBlurEffect(style: .light))
-            blurredView.frame = self.view.bounds
+            blurredView.frame = view.bounds
             view.insertSubview(blurredView, at: 0)
             
     // MARK: - BackGround Video
