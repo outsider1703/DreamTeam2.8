@@ -11,6 +11,7 @@
 		181BB1DA24943C0500DAB451 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181BB1D924943C0500DAB451 /* LoginViewController.swift */; };
 		181BB1DE249458AC00DAB451 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 181BB1DD249458AC00DAB451 /* ProfileViewController.swift */; };
 		186CAC3D2494C2D1001F9675 /* EditProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186CAC3C2494C2D1001F9675 /* EditProfileViewController.swift */; };
+		186CAC4124954688001F9675 /* Login&Password.swift in Sources */ = {isa = PBXBuildFile; fileRef = 186CAC4024954688001F9675 /* Login&Password.swift */; };
 		1891843124941A6F0017EADD /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1891843024941A6F0017EADD /* AppDelegate.swift */; };
 		1891843324941A6F0017EADD /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1891843224941A6F0017EADD /* SceneDelegate.swift */; };
 		1891843524941A6F0017EADD /* StartViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1891843424941A6F0017EADD /* StartViewController.swift */; };
@@ -28,6 +29,7 @@
 		181BB1D924943C0500DAB451 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		181BB1DD249458AC00DAB451 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		186CAC3C2494C2D1001F9675 /* EditProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditProfileViewController.swift; sourceTree = "<group>"; };
+		186CAC4024954688001F9675 /* Login&Password.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Login&Password.swift"; sourceTree = "<group>"; };
 		1891842D24941A6F0017EADD /* DreamTeam2.8.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DreamTeam2.8.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1891843024941A6F0017EADD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1891843224941A6F0017EADD /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -134,6 +136,7 @@
 			isa = PBXGroup;
 			children = (
 				1891844B249432080017EADD /* IngredientsForRecipes.swift */,
+				186CAC4024954688001F9675 /* Login&Password.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -225,6 +228,7 @@
 				1891843524941A6F0017EADD /* StartViewController.swift in Sources */,
 				1891844C249432080017EADD /* IngredientsForRecipes.swift in Sources */,
 				18918451249432440017EADD /* DishesDataManager.swift in Sources */,
+				186CAC4124954688001F9675 /* Login&Password.swift in Sources */,
 				1891843124941A6F0017EADD /* AppDelegate.swift in Sources */,
 				181BB1DE249458AC00DAB451 /* ProfileViewController.swift in Sources */,
 				1891843324941A6F0017EADD /* SceneDelegate.swift in Sources */,

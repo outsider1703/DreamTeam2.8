@@ -10,29 +10,33 @@ import UIKit
 
 class ProfileViewController: UIViewController {
 
+    @IBOutlet var profileImageView: UIImageView!
+    @IBOutlet var profileLabelName: UILabel!
+    
+    var user: User!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        profileLabelName.text = user.name
         
+        profileImageView.layer.cornerRadius = profileImageView.frame.width / 2
         
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
             backgroundImage.image = UIImage(named: "background")
         backgroundImage.contentMode = .scaleAspectFit
             view.insertSubview(backgroundImage, at: 0)
 
-        
-        
-
         let blurredView = UIVisualEffectView(effect: UIBlurEffect(style: .systemMaterial))
         blurredView.frame = view.bounds
-        blurredView.alpha = 0.8
-        
+        blurredView.alpha = 0.9
         view.insertSubview(blurredView, at: 1)
-        
-        
-
-        
+    }
+    
+    // MARK: - IB Actions
+    
+    @IBAction func extitProfile() {
+        dismiss(animated: true)
     }
     
 
