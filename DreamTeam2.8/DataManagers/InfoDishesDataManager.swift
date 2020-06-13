@@ -6,9 +6,9 @@
 //  Copyright © 2020 Aleksandr Kovalov. All rights reserved.
 //
 
-class DishesDataManager {
+class InfoDishesDataManager {
     
-    static let sharedDishes = DishesDataManager()
+    static let sharedDishes = InfoDishesDataManager()
     
     private init() {}
     
