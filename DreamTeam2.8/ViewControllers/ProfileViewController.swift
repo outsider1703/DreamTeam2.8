@@ -13,11 +13,14 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.view.backgroundColor = UIColor(patternImage: UIImage(named: "first.jpg")!)
-        let blurredView = UIVisualEffectView(effect: UIBlurEffect(style: .regular))
-        blurredView.frame = self.view.bounds
+        navigationItem.title = "Александр Ковалев"
+        
+        view.backgroundColor = UIColor(patternImage: UIImage(named: "first.jpg")!)
+        let blurredView = UIVisualEffectView(effect: UIBlurEffect(style: .systemMaterial))
+        blurredView.frame = view.bounds
+        blurredView.alpha = 0.7
         view.insertSubview(blurredView, at: 1)
-
+        
 
         
     }

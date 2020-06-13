@@ -304,6 +304,7 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="9Nq-sP-ktQ" firstAttribute="leading" secondItem="Yx4-3o-v1z" secondAttribute="leading" constant="275" id="03u-zl-ZeN"/>
                             <constraint firstItem="87X-Ir-QdY" firstAttribute="leading" secondItem="ZFu-Kq-DSc" secondAttribute="leading" constant="40" id="8uo-8d-5HO"/>
                             <constraint firstAttribute="trailing" secondItem="87X-Ir-QdY" secondAttribute="trailing" constant="40" id="OK3-ns-DZZ"/>
                             <constraint firstItem="Yx4-3o-v1z" firstAttribute="trailing" secondItem="9Nq-sP-ktQ" secondAttribute="trailing" constant="15" id="dnb-L8-jyk"/>
@@ -362,7 +363,9 @@
                         <viewLayoutGuide key="safeArea" id="qfQ-v4-TWr"/>
                     </view>
                     <navigationItem key="navigationItem" id="jcz-Hp-riS">
-                        <barButtonItem key="rightBarButtonItem" title="Item" id="z4w-tL-DUi">
+                        <barButtonItem key="backBarButtonItem" title="Назад" id="E3t-t0-nZT"/>
+                        <barButtonItem key="rightBarButtonItem" image="person.badge.plus" catalog="system" id="z4w-tL-DUi">
+                            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                             <connections>
                                 <segue destination="jou-Oi-CIe" kind="show" id="XpK-pL-UXM"/>
                             </connections>
@@ -373,21 +376,51 @@
             </objects>
             <point key="canvasLocation" x="2207" y="1365"/>
         </scene>
-        <!--View Controller-->
+        <!--Изменить имя-->
         <scene sceneID="V1T-cq-HcT">
             <objects>
                 <viewController id="jou-Oi-CIe" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="wrX-nX-jab">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="s1u-mn-3NU">
+                                <rect key="frame" x="40" y="271.5" width="295" height="119"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите имя" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="V3l-Ks-8lV">
+                                        <rect key="frame" x="0.0" y="0.0" width="295" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="0vH-Bh-4sS">
+                                        <rect key="frame" x="0.0" y="51" width="295" height="68"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yEA-1X-jeF">
+                                                <rect key="frame" x="0.0" y="0.0" width="295" height="30"/>
+                                                <state key="normal" title="Сохранить"/>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZIg-Is-TZa">
+                                                <rect key="frame" x="0.0" y="38" width="295" height="30"/>
+                                                <state key="normal" title="Отменить"/>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="h8h-0u-HZa" firstAttribute="trailing" secondItem="s1u-mn-3NU" secondAttribute="trailing" constant="40" id="0dM-tQ-qap"/>
+                            <constraint firstItem="s1u-mn-3NU" firstAttribute="centerY" secondItem="h8h-0u-HZa" secondAttribute="centerY" id="5Yy-WO-6WF"/>
+                            <constraint firstItem="s1u-mn-3NU" firstAttribute="leading" secondItem="h8h-0u-HZa" secondAttribute="leading" constant="40" id="Ml4-Ei-jEJ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="h8h-0u-HZa"/>
                     </view>
-                    <navigationItem key="navigationItem" id="8ZG-7x-Wc5"/>
+                    <navigationItem key="navigationItem" title="Изменить имя" id="8ZG-7x-Wc5"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="yBn-cE-se2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3038" y="1365"/>
+            <point key="canvasLocation" x="3037.5999999999999" y="1364.1679160419792"/>
         </scene>
         <!--Constructor-->
         <scene sceneID="S3a-Rm-qSe">
@@ -636,6 +669,7 @@
         <image name="cart.badge.plus" catalog="system" width="128" height="98"/>
         <image name="doc.append" catalog="system" width="115" height="128"/>
         <image name="folder.fill.badge.person.crop" catalog="system" width="128" height="86"/>
+        <image name="person.badge.plus" catalog="system" width="128" height="116"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
     </resources>
 </document>
