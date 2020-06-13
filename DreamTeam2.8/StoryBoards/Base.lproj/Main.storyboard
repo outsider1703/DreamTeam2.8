@@ -132,7 +132,7 @@
                                                         <fragment content="СБРОСИТЬ ЗДЕСЬ">
                                                             <attributes>
                                                                 <color key="NSColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
-                                                                <font key="NSFont" metaFont="label" size="12"/>
+                                                                <font key="NSFont" metaFont="controlContent"/>
                                                                 <integer key="NSUnderline" value="1"/>
                                                             </attributes>
                                                         </fragment>
@@ -366,69 +366,42 @@
         <!--Профиль-->
         <scene sceneID="8xa-mt-UbT">
             <objects>
-                <viewController id="7QU-BX-lsf" customClass="ProfileViewController" customModule="DreamTeam2_8" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController wantsFullScreenLayout="YES" id="7QU-BX-lsf" customClass="ProfileViewController" customModule="DreamTeam2_8" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" opaque="NO" contentMode="scaleAspectFit" id="nAK-Ua-Vyc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="SAq-0B-LOz">
-                                <rect key="frame" x="16" y="64" width="343" height="110"/>
+                                <rect key="frame" x="20" y="49" width="335" height="90"/>
                                 <subviews>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="profile" translatesAutoresizingMaskIntoConstraints="NO" id="4bc-96-V5S">
-                                        <rect key="frame" x="0.0" y="0.0" width="110" height="110"/>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="4bc-96-V5S">
+                                        <rect key="frame" x="0.0" y="0.0" width="90" height="90"/>
                                         <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="height" constant="110" id="C3R-o4-uhj"/>
-                                            <constraint firstAttribute="width" constant="110" id="J3E-gV-72Y"/>
+                                            <constraint firstAttribute="width" secondItem="4bc-96-V5S" secondAttribute="height" multiplier="1:1" id="FQh-Dk-11N"/>
                                         </constraints>
                                     </imageView>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" alignment="center" spacing="-32" translatesAutoresizingMaskIntoConstraints="NO" id="eM3-LM-tN4">
-                                        <rect key="frame" x="114" y="0.0" width="229" height="110"/>
+                                        <rect key="frame" x="94" y="0.0" width="241" height="90"/>
                                         <subviews>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eRg-9o-elu">
-                                                <rect key="frame" x="23.5" y="0.0" width="182.5" height="106"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="eRg-9o-elu">
+                                                <rect key="frame" x="70" y="0.0" width="101" height="90"/>
                                                 <attributedString key="attributedText">
                                                     <fragment content="Ирина">
                                                         <attributes>
-                                                            <font key="NSFont" size="56" name="AmericanTypewriter"/>
-                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                                            <font key="NSFont" size="31" name="AmericanTypewriter"/>
+                                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
                                                         </attributes>
                                                     </fragment>
                                                 </attributedString>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ER-N6-G0v">
-                                                <rect key="frame" x="46" y="74" width="137" height="36"/>
-                                                <state key="normal">
-                                                    <attributedString key="attributedTitle">
-                                                        <fragment content="Изменить">
-                                                            <attributes>
-                                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                <font key="NSFont" metaFont="system" size="19"/>
-                                                                <real key="NSStrokeWidth" value="3"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content=" ">
-                                                            <attributes>
-                                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                <font key="NSFont" metaFont="system" size="19"/>
-                                                                <real key="NSStrokeWidth" value="3"/>
-                                                                <integer key="NSUnderline" value="1"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                        <fragment content="фото">
-                                                            <attributes>
-                                                                <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
-                                                                <font key="NSFont" metaFont="system" size="19"/>
-                                                                <real key="NSStrokeWidth" value="3"/>
-                                                            </attributes>
-                                                        </fragment>
-                                                    </attributedString>
-                                                </state>
-                                            </button>
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SAq-0B-LOz" secondAttribute="height" multiplier="67:18" id="jEf-GN-tQR"/>
+                                </constraints>
                             </stackView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dZi-yx-64W">
                                 <rect key="frame" x="20" y="556" width="335" height="42"/>
@@ -440,14 +413,47 @@
                                     <action selector="extitProfile" destination="7QU-BX-lsf" eventType="touchUpInside" id="koP-Gg-SbT"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="9ER-N6-G0v">
+                                <rect key="frame" x="17" y="136" width="101" height="27.5"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="Изменить">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" metaFont="system"/>
+                                                <font key="NSOriginalFont" metaFont="system"/>
+                                                <real key="NSStrokeWidth" value="3"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content=" ">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="13" name="HelveticaNeue"/>
+                                                <font key="NSOriginalFont" size="13" name="HelveticaNeue"/>
+                                                <real key="NSStrokeWidth" value="3"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="фото ">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" metaFont="system"/>
+                                                <font key="NSOriginalFont" metaFont="system"/>
+                                                <real key="NSStrokeWidth" value="3"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="qfQ-v4-TWr" firstAttribute="trailing" secondItem="SAq-0B-LOz" secondAttribute="trailing" constant="16" id="0oK-nM-hvK"/>
-                            <constraint firstItem="SAq-0B-LOz" firstAttribute="top" secondItem="qfQ-v4-TWr" secondAttribute="top" constant="20" id="5HG-tr-RYO"/>
+                            <constraint firstItem="SAq-0B-LOz" firstAttribute="top" secondItem="qfQ-v4-TWr" secondAttribute="top" constant="5" id="5HG-tr-RYO"/>
+                            <constraint firstItem="9ER-N6-G0v" firstAttribute="leading" secondItem="qfQ-v4-TWr" secondAttribute="leading" constant="17" id="Nmm-Jh-HHM"/>
+                            <constraint firstItem="qfQ-v4-TWr" firstAttribute="trailing" secondItem="SAq-0B-LOz" secondAttribute="trailing" constant="20" id="P4F-K6-0cp"/>
                             <constraint firstItem="dZi-yx-64W" firstAttribute="leading" secondItem="qfQ-v4-TWr" secondAttribute="leading" constant="20" id="W7Q-gm-HZy"/>
-                            <constraint firstItem="SAq-0B-LOz" firstAttribute="leading" secondItem="qfQ-v4-TWr" secondAttribute="leading" constant="16" id="Z1H-gN-VhD"/>
+                            <constraint firstItem="9ER-N6-G0v" firstAttribute="top" secondItem="SAq-0B-LOz" secondAttribute="bottom" constant="-3" id="YZi-gO-XhV"/>
                             <constraint firstItem="qfQ-v4-TWr" firstAttribute="bottom" secondItem="dZi-yx-64W" secondAttribute="bottom" constant="20" id="fpZ-D8-Rfo"/>
+                            <constraint firstItem="SAq-0B-LOz" firstAttribute="leading" secondItem="qfQ-v4-TWr" secondAttribute="leading" constant="20" id="prc-Cr-ZoI"/>
                             <constraint firstItem="qfQ-v4-TWr" firstAttribute="trailing" secondItem="dZi-yx-64W" secondAttribute="trailing" constant="20" id="rco-cQ-I6d"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="qfQ-v4-TWr"/>
@@ -765,6 +771,5 @@
         <image name="folder.fill.badge.person.crop" catalog="system" width="128" height="86"/>
         <image name="pencil.tip.crop.circle.badge.plus" catalog="system" width="128" height="101"/>
         <image name="person.circle" catalog="system" width="128" height="121"/>
-        <image name="profile" width="960" height="1280"/>
     </resources>
 </document>

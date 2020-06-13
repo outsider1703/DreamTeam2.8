@@ -6,13 +6,19 @@
 //  Copyright © 2020 Aleksandr Kovalov. All rights reserved.
 //
 
-import Foundation
-
 struct User {
+    let login: String
     let name: String
+    let surName: String
     let paswword: String
+    let image: String
+    
+    var fullName: String {
+        "\(name) \(surName)"
+    }
+    
     
     static func getUserData() -> User {
-        User(name: "Admin", paswword: "Password")
+        User(login: "Admin", name: "Ирина", surName: "Богута", paswword: "Password", image: "profile")
     }
 }

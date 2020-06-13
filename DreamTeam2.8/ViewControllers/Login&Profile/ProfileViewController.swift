@@ -18,9 +18,10 @@ class ProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        profileLabelName.text = user.name
+        profileImageView.image = UIImage(named: user.image)
+        profileLabelName.text = user.fullName
         
-        profileImageView.layer.cornerRadius = profileImageView.frame.width / 2
+        
         
         let backgroundImage = UIImageView(frame: UIScreen.main.bounds)
             backgroundImage.image = UIImage(named: "background")
@@ -31,6 +32,10 @@ class ProfileViewController: UIViewController {
         blurredView.frame = view.bounds
         blurredView.alpha = 0.9
         view.insertSubview(blurredView, at: 1)
+    }
+    
+    override func viewWillLayoutSubviews() {
+        profileImageView.layer.cornerRadius = profileImageView.frame.width / 2
     }
     
     // MARK: - IB Actions
